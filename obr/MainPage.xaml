@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="obr.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:obr"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodel="clr-space:obr.ViewModel"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.DataContext>
+        <viewmodel:MainViewModel></viewmodel:MainViewModel>
+    </Page.DataContext>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Vertical">
+            <Button Content="Otevřít soubor" Click="Button_Click"></Button>
+            <TextBlock Text="Úprava"></TextBlock>
+            <Button Content="R"></Button>
+            <Button Content="G"></Button>
+            <Button Content="B"></Button>
+
+            <Button Content="Další přídavné věci"></Button>
+            <Button Content="Další přídavné věci"></Button>
+            <Button Content="Další přídavné věci"></Button>
+            <Button Content="Další přídavné věci"></Button>
+
+           
+        </StackPanel>
+        
+        
+    </Grid>
+</Page>
